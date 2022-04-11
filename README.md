@@ -46,5 +46,7 @@ npm run build
 - [Owamamwen Ogunniyi](https://owas-resume.web.app)
 
 
+## GUI
+
 ![gui](https://user-images.githubusercontent.com/24244287/162844847-a7b65c1f-d531-46b2-bed0-f2600baebb51.png)
 
