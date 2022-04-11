@@ -1,0 +1,28 @@
+{
+  "name": "weboilerpack",
+  "version": "1.0.0",
+  "description": "Bundle web content into single page with customize",
+  "main": "index.js",
+  "author": "Owamamwen Ogunniyi",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config webconfig/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webconfig/webpack.prod.js",
+    "prettify": "prettier --write 'src/**/*.js'",
+    "lint": "eslint 'src/**/*.js' || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vovem/weboilerpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "weboilerpack"
+  ],
+  "bugs": {
+    "url": "https://github.com/vovem/weboilerpack/issues"
+  },
+  "homepage": "https://github.com/vovem/weboilerpack#readme",
+  "devDependencies": {
+  }
+}

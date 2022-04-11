@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_VariableFont_slnt_wght.ttf') format('ttf');
+}
+
+$font-size: 16px;
+$font-family: 'Inter', sans-serif;
+$background-color: #282c34;
+$font-color: #ffffff;
+$center: center;
+$white: white;
+$none: none;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: $center;
+  justify-content: $center;
+  color: $font-color;
+  font-size: $font-size;
+  font-family: $font-family;
+  background-color: $background-color;
+  min-height: 90vh;
+  text-align: $center;
+  color: $white;
+}
+h1 {
+  margin: 20px 0 15px 0;
+}
+.logo{
+  height: 25vmin;
+  pointer-events: $none;
+}
+a{
+  display: inline-block;
+  background-color: #aee3ff;
+  text-decoration: $none;
+  color: #1c78c0;
+  padding: 15px 23px;
+}
+a:hover{
+  color: rgb(182, 115, 115);
+}
+
+
+
