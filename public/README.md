@@ -2,9 +2,6 @@
 
 Bundle web content into single page with customize
 
-## Installation
-
-Clone the repo.
 
 ## DevDependencies
 
@@ -21,26 +18,3 @@ Get the latest update, it's require to install
 5. npm i -D @babel/core
 
 6. npm i -D @babel/preset-env
-
-### Development server
-
-```bash
-npm start
-```
-
-Runs the app in the development
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
-
-### Production build
-
-```bash
-npm run build
-```
-
-## Features
-
-- [Google Fonts](https://fonts.google.com/specimen/Inter)
-
-## Author
-
-- [Owamamwen Ogunniyi](https://owas-resume.web.app)
