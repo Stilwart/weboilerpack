@@ -3,7 +3,7 @@
 Bundle web content into single page with customize.
 
 ## Webpack version
-It's compatible with any version of webpack.
+Compatible with any version of webpack.
 
 ## Installation
 
@@ -11,7 +11,7 @@ Clone the repo.
 
 ## DevDependencies
 
-Get the latest update, it's require to install.
+Get the latest update, require to install.
 
 1. npm i -D webpack-cli webpack style-loader sass-loader prettier sass postcss-preset-env postcss-loader webpack-merge webpack-dev-server
 
