@@ -11,7 +11,7 @@ Clone the repo.
 
 ## DevDependencies
 
-Get the latest update, require to install.
+Get the latest update, require to install resolving packages...
 
 1. npm i -D webpack-cli webpack style-loader sass-loader prettier sass postcss-preset-env postcss-loader webpack-merge webpack-dev-server
 
