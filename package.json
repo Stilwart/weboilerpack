@@ -1,6 +1,6 @@
 {
   "name": "weboilerpack",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Bundle web content into single page with customize",
   "main": "index.js",
   "author": "Owamamwen Ogunniyi",
