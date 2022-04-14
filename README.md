@@ -46,7 +46,7 @@ npm run build
 
 ## Author
 
-- Copyright (c) 2022 [Owamamwen Ogunniyi]
+- Copyright (c) 2022 Owamamwen Ogunniyi
 
 
 ## GUI
