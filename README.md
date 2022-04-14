@@ -46,7 +46,9 @@ npm run build
 
 ## Copyright License
 
-- Copyright (c) 2022, Owamamwen Ogunniyi
+Copyright (c) 2022, Owamamwen Ogunniyi
+
+VovemDev source code is licensed under the [MIT License](https://github.com/vovem/weboilerpack/blob/main/LICENSE)
 
 
 ## GUI
