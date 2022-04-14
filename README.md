@@ -44,9 +44,9 @@ npm run build
 
 - [Google Fonts](https://fonts.google.com/specimen/Inter)
 
-## Author
+## Copyright License
 
-- Copyright (c) 2022 Owamamwen Ogunniyi
+- Copyright (c) 2022, Owamamwen Ogunniyi
 
 
 ## GUI
