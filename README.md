@@ -46,7 +46,7 @@ npm run build
 
 ## Author
 
-- [Owamamwen Ogunniyi](https://owas-resume.web.app)
+- Copyright (c) 2022 [Owamamwen Ogunniyi]
 
 
 ## GUI
