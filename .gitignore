@@ -1,3 +1,8 @@
+# Runtime data
 **/.DS_Store
-/dist
+
+# Dependency directories
 /node_modules
+
+# Nuxt.js build / generate output
+/dist
