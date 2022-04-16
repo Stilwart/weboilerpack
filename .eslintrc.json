@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "no-var": 1,
+    "camelcase": 1,
+    "no-unused-vars": 1,
+    "no-self-compare": 1,
+    "no-nested-ternary": 1,
+    "no-template-curly-in-string": 1,
+    "import/prefer-default-export": 0,
+    "prefer-template": "off",
+    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
+  },
+  "ignorePatterns": ["webconfig/paths.js", "node_modules", "dist", "webpack.*"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "webconfig": "webconfig/webpack.common.js"
+      }
+    }
+  }
+}
