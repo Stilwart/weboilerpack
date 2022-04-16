@@ -9,6 +9,7 @@ function vovemdev() {
 const packLogo = document.createElement('img')
 packLogo.src = webLogo
 packLogo.className="logo"
+packLogo.alt="webpack"
 // headerText
 const headerText = document.createElement('h1')
 headerText.textContent = vovemdev()
@@ -20,4 +21,3 @@ aTage.innerHTML = "GitHub Repository";
 // html root
 const app = document.querySelector('#root')
 app.append(packLogo, headerText, aTage)
-
