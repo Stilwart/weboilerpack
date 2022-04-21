@@ -1,6 +1,6 @@
 {
   "name": "weboilerpack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bundle web content into single page with customize",
   "main": "index.js",
   "author": "Owamamwen Ogunniyi",
@@ -9,6 +9,7 @@
     "start": "cross-env NODE_ENV=development webpack serve --config webconfig/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webconfig/webpack.prod.js",
     "prettify": "prettier --write 'src/**/*.js'",
+    "serve": "serve dist",
     "lint": "eslint 'src/**/*.js' || true"
   },
   "repository": {
