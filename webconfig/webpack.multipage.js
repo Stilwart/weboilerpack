@@ -4,7 +4,7 @@ const paths = require('./paths')
 // customHtml object
 const customHtml = {
     default: {
-    ficon: '/assets/images/favicon.ico',
+    ficon: '/assets/img/favicon.ico',
       },
     index:{
       headerName: 'Weboilerpack',
