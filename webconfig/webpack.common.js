@@ -23,7 +23,7 @@ jsRule: /\.js$/,
 imageRule: /\.(?:ico|gif|png|jpg|jpeg)$/i,
 resourceEx:/\.(woff(2)?|eot|ttf|otf|svg|)$/,
 specChar: '@',
-ServiceWorker: 'service-worker.js',
+serviceWorker: 'service-worker.js',
 true:true
 }
 
@@ -50,7 +50,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     customHtmlPage,
     new GenerateSW({
-      swDest: commonObject.ServiceWorker,
+      swDest: commonObject.serviceWorker,
       clientsClaim: commonObject.true,
       skipWaiting: commonObject.true
     })
