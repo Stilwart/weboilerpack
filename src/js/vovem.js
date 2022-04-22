@@ -1,5 +1,5 @@
 import '@/styles/index.scss'
-import webLogo from '@/assets/images/logo.png'
+import webLogo from '@/assets/img/logo.png'
 
 // web content
 function vovemdev() {
@@ -21,3 +21,4 @@ aTage.innerHTML = "GitHub Repository";
 // html root
 const app = document.querySelector('#root')
 app.append(packLogo, headerText, aTage)
+

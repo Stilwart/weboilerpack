@@ -1,12 +1,12 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { GenerateSW } = require('workbox-webpack-plugin')
 const {customHtmlPage} = require('./webpack.multipage')
 const paths = require('./paths')
 
 // object values
 const commonObject = {
 headerName: 'Weboilerpack',
-ficon: '/assets/images/favicon.ico',
 entryPage: '/index.js',
 bundlePath: '[name].bundle.js',
 public: '/',
@@ -48,6 +48,11 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     customHtmlPage,
+    new GenerateSW({
+      swDest: 'service-worker.js',
+      clientsClaim: true,
+      skipWaiting: true
+    })
   ],
   module: {
     rules: [
