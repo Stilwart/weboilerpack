@@ -18,7 +18,7 @@ Get the latest update, require to install resolving packages...
 
 2. npm i -D mini-css-extract-plugin html-webpack-plugin eslint-plugin-prettier eslint-import-resolver-webpack eslint-config-prettier
 
-3. npm i -D eslint css-minimizer-webpack-plugin css-loader cross-env copy-webpack-plugin clean-webpack-plugin babel-loader workbox-webpack-plugin
+3. npm i -D eslint css-minimizer-webpack-plugin css-loader cross-env copy-webpack-plugin clean-webpack-plugin babel-loader workbox-webpack-plugin http-server
 
 4. npm i -D @babel/plugin-proposal-class-properties
 
