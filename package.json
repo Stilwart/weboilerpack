@@ -24,6 +24,5 @@
     "url": "https://github.com/vovem/weboilerpack/issues"
   },
   "homepage": "https://github.com/vovem/weboilerpack#readme",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
