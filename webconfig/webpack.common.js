@@ -1,30 +1,38 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { GenerateSW } = require('workbox-webpack-plugin')
-const {customHtmlPage} = require('./webpack.multipage')
+const { customHtmlPage } = require('./webpack.multipage')
 const paths = require('./paths')
+
+/*
+COMMON JS
+The file share a common configuration for both
+the development-config and the production-config on one
+convient file to reduce duplicate configuration settings
+on differnt files.
+*/
 
 // object values
 const commonObject = {
-headerName: 'Weboilerpack',
-entryPage: '/index.js',
-bundlePath: '[name].bundle.js',
-public: '/',
-resource: 'assets',
-assetResource: 'asset/resource',
-assetInline: 'asset/inline',
-ignore: ['*.DS_Store'],
-templatePage: '/index.html',
-loadFilename: 'index.html',
-module: 'node_modules',
-extension: ['.js', '.jsx', '.json'],
-babelLoader: ['babel-loader'],
-jsRule: /\.js$/,
-imageRule: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-resourceEx:/\.(woff(2)?|eot|ttf|otf|svg|)$/,
-specChar: '@',
-serviceWorker: 'service-worker.js',
-true:true
+  headerName: 'Weboilerpack',
+  entryPage: '/index.js',
+  bundlePath: '[name].bundle.js',
+  public: '/',
+  resource: 'assets',
+  assetResource: 'asset/resource',
+  assetInline: 'asset/inline',
+  ignore: ['*.DS_Store'],
+  templatePage: '/index.html',
+  loadFilename: 'index.html',
+  module: 'node_modules',
+  extension: ['.js', '.jsx', '.json'],
+  babelLoader: ['babel-loader'],
+  jsRule: /\.js$/,
+  imageRule: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+  resourceEx: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+  specChar: '@',
+  serviceWorker: 'service-worker.js',
+  true: true,
 }
 
 module.exports = {
@@ -32,7 +40,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: commonObject.bundlePath,
-    publicPath: commonObject.public
+    publicPath: commonObject.public,
   },
   plugins: [
     new CopyWebpackPlugin({
@@ -52,22 +60,16 @@ module.exports = {
     new GenerateSW({
       swDest: commonObject.serviceWorker,
       clientsClaim: commonObject.true,
-      skipWaiting: commonObject.true
-    })
+      skipWaiting: commonObject.true,
+    }),
   ],
   module: {
     rules: [
-      { test: commonObject.jsRule, 
-        use: commonObject.babelLoader 
-      },
+      { test: commonObject.jsRule, use: commonObject.babelLoader },
 
-      { test: commonObject.imageRule, 
-        type: commonObject.assetResource 
-      },
+      { test: commonObject.imageRule, type: commonObject.assetResource },
 
-      { test: commonObject.resourceEx, 
-        type: commonObject.assetInline 
-      },
+      { test: commonObject.resourceEx, type: commonObject.assetInline },
     ],
   },
   resolve: {

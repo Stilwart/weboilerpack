@@ -6,3 +6,7 @@
 
 # Nuxt.js build / generate output
 /dist
+
+# Json
+/package-lock.json
+/package.json
